@@ -1,0 +1,5 @@
+C:\Users\Admin\Kelvin\personal\projects\portfolio\web.server\obj\Debug\net9.0\web.server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Kelvin\personal\projects\portfolio\web.server\obj\Debug\net9.0\web.server.AssemblyInfoInputs.cache
+C:\Users\Admin\Kelvin\personal\projects\portfolio\web.server\obj\Debug\net9.0\web.server.AssemblyInfo.cs
+C:\Users\Admin\Kelvin\personal\projects\portfolio\web.server\obj\Debug\net9.0\web.server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Kelvin\personal\projects\portfolio\web.server\obj\Debug\net9.0\web.server.sourcelink.json
