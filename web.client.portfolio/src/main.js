@@ -1,0 +1,22 @@
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import '@/assets/main.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init({
+	duration: 800,
+	easing: 'ease-in-out',
+	once: true,
+	mirror: false,
+})
+
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')
