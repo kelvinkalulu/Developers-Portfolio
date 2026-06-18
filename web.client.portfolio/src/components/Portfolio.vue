@@ -170,6 +170,7 @@
             'Rabbit MQ',
             'Firebase',
             'Git',
+            'GitHub',
           ]"
           :key="skill"
           class="px-5 py-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500 hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer"
