@@ -92,26 +92,84 @@
     </section>
 
     <!-- ABOUT -->
-    <section data-aos="zoom-in" id="about" class="px-8 py-20 border-t border-slate-800">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+    <section data-aos="zoom-in" id="about" class="px-8 py-20 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         <div>
-          <h3 class="text-2xl font-semibold text-white">About Me</h3>
-          <p class="mt-4 text-slate-400 leading-relaxed">
-            Experienced full-stack developer specializing in enterprise systems, payroll solutions,
-            HR systems, and API-driven architectures. I focus on maintainable code, clean UX, and
-            scalable backend design.
-          </p>
-        </div>
-
-        <div class="space-y-4">
-          <div class="p-4 bg-slate-900 rounded-xl border border-slate-800">
-            <p class="text-sm text-slate-400">Experience</p>
-            <p class="text-white font-semibold">5+ Years</p>
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-6"
+          >
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Enterprise Software Engineer
           </div>
 
-          <div class="p-4 bg-slate-900 rounded-xl border border-slate-800">
-            <p class="text-sm text-slate-400">Specialization</p>
-            <p class="text-white font-semibold">Vue · .NET · EF Core</p>
+          <h3 class="text-4xl font-bold text-slate-900 dark:text-white">
+            Building Digital Platforms That Drive Business Growth
+          </h3>
+
+          <p class="mt-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+            I'm Kelvin Kalulu, a Full Stack Developer focused on designing and delivering
+            enterprise-grade software solutions. My work spans Entity Resource Planning (ERP), Payroll Management Systems, Human
+            Resource Platforms, Business Process Automation, Taylor Made Solutions and scalable cloud-connected
+            applications used by organizations to improve efficiency and decision-making.
+          </p>
+
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+            I combine modern frontend technologies such as Vue.js with robust backend architectures
+            built on Node JS, ASP.NET Core, Entity Framework, and SQL Server to create systems that are
+            secure, maintainable, and built for long-term growth.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mt-8">
+            <span
+              class="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+            >
+              Payroll Systems
+            </span>
+
+            <span
+              class="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+            >
+              HR Platforms
+            </span>
+
+            <span
+              class="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+            >
+              Enterprise Applications
+            </span>
+
+            <span
+              class="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+            >
+              Cloud Solutions
+            </span>
+          </div>
+        </div>
+
+        <div class="space-y-5">
+          <div
+            class="p-6 rounded-2xl backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800"
+          >
+            <p class="text-sm text-slate-500">Professional Experience</p>
+            <p class="mt-2 text-3xl font-bold text-slate-900 dark:text-white">5+ Years</p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800"
+          >
+            <p class="text-sm text-slate-500">Core Technologies</p>
+            <p class="mt-2 text-xl font-semibold text-slate-900 dark:text-white">
+              Vue.js · ASP.NET Core ·  Node JS · SQL Server
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800"
+          >
+            <p class="text-sm text-slate-500">Focus Areas</p>
+            <p class="mt-2 text-xl font-semibold text-slate-900 dark:text-white">
+              Enterprise Software • Payroll • HR Systems • Taylor Made Software Solutions
+            </p>
           </div>
         </div>
       </div>
@@ -150,8 +208,10 @@
     </section>
 
     <!-- SKILLS -->
-    <section data-aos="zoom-in" id="skills" class="px-8 py-20 border-t border-slate-800">
-      <h3 class="text-2xl font-semibold text-white text-center">Technical Skills</h3>
+    <section data-aos="zoom-in" id="skills" class="px-8 py-20 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-2xl font-semibold text-slate-900 dark:text-white text-center">
+        Technical Skills
+      </h3>
 
       <div class="flex flex-wrap gap-4 justify-center mt-10">
         <span
@@ -163,7 +223,7 @@
             'ASP.NET Core',
             'EF Core',
             'SQL Server',
-  'Azure',
+            'Azure',
             'AWS',
             'Docker',
             'REST APIs',
@@ -182,8 +242,10 @@
     </section>
 
     <!-- PROJECTS -->
-    <section data-aos="fade-right" id="projects" class="px-8 py-20 border-t border-slate-800">
-      <h3 class="text-2xl font-semibold text-white text-center">Featured Projects</h3>
+    <section data-aos="fade-right" id="projects" class="px-8 py-20 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-2xl font-semibold text-slate-900 dark:text-white text-center">
+        Featured Projects
+      </h3>
 
       <div class="grid md:grid-cols-3 max-w-6xl mx-auto gap-8 mt-12">
         <div
