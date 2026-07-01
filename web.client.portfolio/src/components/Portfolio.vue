@@ -3,7 +3,7 @@
     class="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-white transition-all duration-500 overflow-hidden"
   >
     <!-- Aurora Background -->
-    <div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="fixed inset-0 -z-10 overflow-hidden" >
       <div
         class="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-emerald-500/20 blur-3xl animate-pulse"
       ></div>
@@ -17,48 +17,17 @@
       ></div>
     </div>
 
-    <!-- NAV -->
-    <header
-      class="sticky top-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800"
-    >
-      <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
-        <div>
-          <h1
-            class="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-green-600 bg-clip-text text-transparent"
-          >
-            Kelvin Kalulu
-          </h1>
-        </div>
-
-        <div class="flex items-center gap-8">
-          <nav class="hidden md:flex gap-6">
-            <a href="#about" class="hover:text-emerald-500 transition">About</a>
-            <a href="#skills" class="hover:text-emerald-500 transition">Skills</a>
-            <a href="#projects" class="hover:text-emerald-500 transition">Projects</a>
-            <a href="#contact" class="hover:text-emerald-500 transition">Contact</a>
-          </nav>
-
-          <button
-            @click="toggleTheme"
-            class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center"
-          >
-            {{ darkMode ? '☀️' : '🌙' }}
-          </button>
-        </div>
-      </div>
-    </header>
-
     <!-- HERO -->
     <section
       data-aos="fade-up"
-      class="min-h-[90vh] flex flex-col items-center justify-center text-center"
+      class="min-h-[90vh] flex flex-col items-center justify-center text-center mt-12 px-6 md:px-8" id="home"
     >
-      <!-- <div
+      <div
         class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 px-4 py-2 rounded-full mb-8"
       >
         <span class="h-2 w-2 bg-emerald-500 rounded-full animate-pulse"></span>
         Available for Opportunities
-      </div> -->
+      </div>
 
       <h2 class="text-5xl md:text-7xl font-black leading-tight max-w-5xl animate-fade-up">
         Building
