@@ -1,7 +1,7 @@
 <template>
-  <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800 mb-6">
     <nav class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-18">
 
         <!-- Logo -->
         <a href="#" class="text-2xl font-bold text-white tracking-wide">
@@ -26,7 +26,7 @@
           <button
             @click="downloadCV"
             downloadCV
-            class="px-5 py-2 rounded-lg bg-emerald-500 text-white hover:bg-emerald-600 transition"
+            class="px-5 py-2 rounded-lg bg-emerald-500 text-white hover:bg-emerald-800 transition"
           >
             Download CV
           </button>
@@ -99,7 +99,7 @@
           <a
             href="/files/Kelvin_Kalulu_CV.pdf"
             download
-            class="inline-block mt-4 px-5 py-2 rounded-lg bg-emerald-500 text-white hover:bg-emerald-600 transition"
+            class="inline-block mt-4 px-5 py-2 rounded-lg bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold hover:scale-105 transition"
           >
             Download CV
           </a>

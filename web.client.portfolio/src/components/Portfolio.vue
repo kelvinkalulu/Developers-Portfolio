@@ -3,7 +3,7 @@
     class="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-white transition-all duration-500 overflow-hidden"
   >
     <!-- Aurora Background -->
-    <div class="fixed inset-0 -z-10 overflow-hidden" >
+    <div class="fixed inset-0 -z-10 overflow-hidden">
       <div
         class="absolute top-0 left-0 h-[500px] w-[500px] rounded-full bg-emerald-500/20 blur-3xl animate-pulse"
       ></div>
@@ -20,7 +20,8 @@
     <!-- HERO -->
     <section
       data-aos="fade-up"
-      class="min-h-[90vh] flex flex-col items-center justify-center text-center mt-12 px-6 md:px-8" id="home"
+      class="min-h-[90vh] flex flex-col items-center justify-center text-center mt-12 px-6 md:px-8"
+      id="home"
     >
       <div
         class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 px-4 py-2 rounded-full mb-8"
@@ -52,7 +53,8 @@
           View Projects
         </a>
 
-        <button @click="downloadCV"
+        <button
+          @click="downloadCV"
           class="px-8 py-4 rounded-2xl border border-slate-300 dark:border-slate-700 hover:scale-105 transition"
         >
           Download CV
@@ -61,7 +63,11 @@
     </section>
 
     <!-- ABOUT -->
-    <section data-aos="zoom-in" id="about" class="px-8 py-20 border-t border-slate-200 dark:border-slate-800">
+    <section
+      data-aos="zoom-in"
+      id="about"
+      class="px-8 py-20 border-t border-slate-200 dark:border-slate-800"
+    >
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         <div>
           <div
@@ -77,15 +83,16 @@
 
           <p class="mt-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             I'm Kelvin Kalulu, a Full Stack Developer focused on designing and delivering
-            enterprise-grade software solutions. My work spans Entity Resource Planning (ERP), Payroll Management Systems, Human
-            Resource Platforms, Business Process Automation, Taylor Made Solutions and scalable cloud-connected
-            applications used by organizations to improve efficiency and decision-making.
+            enterprise-grade software solutions. My work spans Entity Resource Planning (ERP),
+            Payroll Management Systems, Human Resource Platforms, Business Process Automation,
+            Taylor Made Solutions and scalable cloud-connected applications used by organizations to
+            improve efficiency and decision-making.
           </p>
 
           <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             I combine modern frontend technologies such as Vue.js with robust backend architectures
-            built on Node JS, ASP.NET Core, Entity Framework, and SQL Server to create systems that are
-            secure, maintainable, and built for long-term growth.
+            built on Node JS, ASP.NET Core, Entity Framework, and SQL Server to create systems that
+            are secure, maintainable, and built for long-term growth.
           </p>
 
           <div class="flex flex-wrap gap-3 mt-8">
@@ -128,7 +135,7 @@
           >
             <p class="text-sm text-slate-500">Core Technologies</p>
             <p class="mt-2 text-xl font-semibold text-slate-900 dark:text-white">
-              Vue.js · ASP.NET Core ·  Node JS · SQL Server
+              Vue.js · ASP.NET Core · Node JS · SQL Server
             </p>
           </div>
 
@@ -176,8 +183,23 @@
       </div>
     </section>
 
+    <section class="mx-auto max-w-6xl px-6 py-16">
+      <div class="mb-10">
+        <h1 class="text-4xl font-bold text-slate-900 dark:text-white">Featured Projects</h1>
+        <p class="mt-3 text-slate-600 dark:text-slate-400">Some enterprise solutions and dashboards I have developed.</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <ProjectsPreview v-for="project in projects" :key="project.title" v-bind="project" :link="project.link"/>
+      </div>
+    </section>
+
     <!-- SKILLS -->
-    <section data-aos="zoom-in" id="skills" class="px-8 py-20 border-t border-slate-200 dark:border-slate-800">
+    <section
+      data-aos="zoom-in"
+      id="skills"
+      class="px-8 py-20 border-t border-slate-200 dark:border-slate-800"
+    >
       <h3 class="text-2xl font-semibold text-slate-900 dark:text-white text-center">
         Technical Skills
       </h3>
@@ -211,7 +233,11 @@
     </section>
 
     <!-- PROJECTS -->
-    <section data-aos="fade-right" id="projects" class="px-8 py-20 border-t border-slate-200 dark:border-slate-800">
+    <section
+      data-aos="fade-right"
+      id="projects"
+      class="px-8 py-20 border-t border-slate-200 dark:border-slate-800"
+    >
       <h3 class="text-2xl font-semibold text-slate-900 dark:text-white text-center">
         Featured Projects
       </h3>
@@ -362,20 +388,23 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useProjectsStore } from '@/stores'
-import cv from "@/assets/files/Kelvin_Kalulu_CV.pdf"
+import cv from '@/assets/files/Kelvin_Kalulu_CV.pdf'
+import ProjectsPreview from './ProjectsPreview.vue'
+import HrOverview from '@/assets/images/HR_Overview.png'
+import WorkForceOverview from '@/assets/images/workforce_summary.png'
 
 const projectsStore = useProjectsStore()
 
-const darkMode = ref(false)
+// const darkMode = ref(false)
 
-const toggleTheme = () => {
-  darkMode.value = !darkMode.value
-  if (darkMode.value) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-}
+// const toggleTheme = () => {
+//   darkMode.value = !darkMode.value
+//   if (darkMode.value) {
+//     document.documentElement.classList.add('dark')
+//   } else {
+//     document.documentElement.classList.remove('dark')
+//   }
+// }
 
 // const projects = projectsStore.FeaturedProjects
 
@@ -395,4 +424,23 @@ const downloadCV = () => {
   link.click()
   document.body.removeChild(link)
 }
+
+// featured projects images
+const projects = [
+  {
+    image: HrOverview,
+    title: 'HR Overview Dashboard',
+    description:
+      'A comprehensive HR dashboard providing insights into employee data, performance metrics, and organizational trends.',
+    tags: ['Vue.js', 'Tailwind CSS', 'Chart.js', 'REST APIs', 'Dashboard'],
+    link: 'https://demo.hatujambo.com'
+  },
+  {
+    image: WorkForceOverview,
+    title: 'Workforce Management System',
+    description: 'A robust system for managing and optimizing workforce resources and allocations.',
+    tags: ['Vue.js', 'Tailwind CSS', 'ASP.NET Core', 'PostgreSQL'],
+    link: 'https://demo.hatujambo.com'
+  },
+]
 </script>
