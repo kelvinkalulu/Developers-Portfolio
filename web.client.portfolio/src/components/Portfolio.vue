@@ -83,7 +83,7 @@
           View Projects
         </a>
 
-        <button
+        <button @click="downloadCV"
           class="px-8 py-4 rounded-2xl border border-slate-300 dark:border-slate-700 hover:scale-105 transition"
         >
           Download CV
@@ -393,6 +393,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useProjectsStore } from '@/stores'
+import cv from "@/assets/files/Kelvin_Kalulu_CV.pdf"
 
 const projectsStore = useProjectsStore()
 
@@ -415,4 +416,14 @@ onMounted(() => {
   })
   // Initialization code if needed
 })
+
+// download cv link
+const downloadCV = () => {
+  const link = document.createElement('a')
+  link.href = cv
+  link.download = 'Kelvin_Kalulu_CV.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 </script>
